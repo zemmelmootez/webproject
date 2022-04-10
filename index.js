@@ -28,11 +28,14 @@ function test()
   {
     document.documentElement.setAttribute('data-theme', 'dark');
     document.getElementById("switch").attributes[3].value="light";
+    document.querySelector(".logo").src="logodark.png";
     document.getElementById("logo").src="logodark.png";
+    
 }
 else
 { document.getElementById("switch").attributes[3].value="dark";
     document.documentElement.setAttribute('data-theme', 'light');
+    document.querySelector(".logo").src="Groupe 17.png";
     document.getElementById("logo").src="Groupe 17.png";
 }
 }
