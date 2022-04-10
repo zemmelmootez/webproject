@@ -1,11 +1,28 @@
 *{
-color: rgb(212, 209, 209);
+color: var(--font-color) !important;
+
 margin: 0;
 padding: 0;
 }
 
+:root {
+    --primary-color: #0D0C0C;
+    --font-color: rgb(212, 209, 209);
+   
+    --secondary-color: #000000;
+     /*
+    --bg-color: #fff;
+    --heading-color: #292922;*/
+}
+[data-theme="dark"] {
+    --primary-color: #ffffff;
+    --font-color:rgb(0, 0, 0);
+   
+    --secondary-color: #ffffff;
+}
+
 body{
-    background-color:#0D0C0C ;
+    background-color:var(--primary-color); 
 }
 .header{
     display: flex;
@@ -41,7 +58,7 @@ body{
     height: 2px;
     bottom: 0;
     left: 0;
-   background-color: white;
+   background-color: var(--font-color);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -84,18 +101,19 @@ body{
      
   }
   article div h1{
-      color: #00759F;
+      color: #00759F !important;
       font-size: 25px;
       font-weight: 800;
   }
   article div button{
       float: right;
-      background-color: #00759F;
+      background-color: #00759F !important;
       border: 0;
       padding: 10px 20px;
       border-radius: 17px;
       text-transform: capitalize;
       font-weight: 600;
+      color: white !important;
 
   }
   .main div h1{
@@ -103,7 +121,7 @@ body{
   }
   .section2 h1{
       text-align: center;
-      color: #00759F;
+      color: #00759F !important;
       font-size: 25px;
     
       font-weight: 800;
@@ -117,12 +135,13 @@ body{
       gap: 60px;
       width: 100%;
       
+      
   }
   .groupe-card div{
       box-sizing: border-box;
       width: 340px;
       height: 200px;
-      background-color: black;
+      background-color: var(--secondary-color);
       border-radius: 17px;
       padding: 20px 10px;
       display: flex;
@@ -143,14 +162,14 @@ body{
     
   }
   .groupe-card div button{
-    background-color: #00759F;
+    background-color: #00759F !important;
     border: 0;
     padding: 10px 20px;
     border-radius: 17px;
     text-transform: capitalize;
     font-weight: 600;
     width: 40%;
-    
+    color: white !important;
     
   }
  .html{
@@ -233,7 +252,7 @@ textarea{
     }
     .conact-container h1{
         text-align: center;
-        color: #00759F;
+        color: #00759F !important;
         font-size: 25px;
       
         font-weight: 800;
@@ -247,22 +266,24 @@ textarea{
 
 }
 .buttons button{
-    background-color: #00759F;
+    background-color: #00759F !important;
     border: 0;
     padding: 10px 20px;
     border-radius: 17px;
     text-transform: capitalize;
     font-weight: 600;
     width: 20%;
+    color: white !important;
 }
 
 #reset{
-    background-color: transparent;
+    background-color: transparent !important;
     border: 1px solid #707070;
+    color: var(--font-color) !important;
 }
 
 footer{
-    background-color: black;
+    background-color: var(--secondary-color);
     padding: 20px 20px;
     display: flex;
     align-items: flex-start;
@@ -274,7 +295,7 @@ footer{
     
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     
 }
 
@@ -283,8 +304,10 @@ footer{
     
 }
 .footer1 li{
-    padding: 5px 0;
+    padding: 2px 0;
     list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
 .footer2 h3{
@@ -301,4 +324,14 @@ footer{
     text-decoration: none;
     font-size: 14px;
     
+}
+.night{
+    width: 30px;
+    padding: 20px;
+    height: 30px;
+  
+    position: fixed;
+    top: 50%;
+    right: 0;
+
 }
