@@ -3,6 +3,7 @@ color: var(--font-color) !important;
 
 margin: 0;
 padding: 0;
+flex-wrap: wrap;
 }
 
 :root {
@@ -13,12 +14,15 @@ padding: 0;
      /*
     --bg-color: #fff;
     --heading-color: #292922;*/
+    --border: 0;
 }
 [data-theme="dark"] {
     --primary-color: #ffffff;
     --font-color:rgb(0, 0, 0);
    
     --secondary-color: #ffffff;
+    --border: 1px 0 6px #bbb7b7;
+
 }
 
 body{
@@ -149,6 +153,7 @@ body{
       flex-direction: column;
       justify-content: space-around;
      opacity: 0.5;
+     box-shadow: var(--border);
      
   }
   .groupe-card div:hover{
