@@ -292,6 +292,11 @@ color: #00759F !important;}
     background-color: transparent !important;
     border: 1px solid #707070;
     color: var(--font-color) !important;
+    padding: 10px 20px;
+    border-radius: 17px;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 20%;
 }
 
 footer{
