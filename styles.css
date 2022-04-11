@@ -43,7 +43,7 @@ body{
     display: flex;
     justify-content: space-around;
     width: 45%;
-
+    gap: 16px;
     
 }
 .nav li{
@@ -51,6 +51,7 @@ body{
     position: relative;
     opacity: 0.85;
     color: white;
+
     
 }
 
@@ -87,8 +88,12 @@ body{
     background-color: white;
     color: black !important;
   }
-  section{
+  .main{
       padding: 60px 20px;
+  }
+  .section2
+  {
+    padding: 60px 20px;
   }
   article{
       display: flex;
@@ -178,10 +183,10 @@ body{
     
   }
  .html{
-    background-image: url("5847f5bdcef1014c0b5e489c.png");
+    background-image: url("html.png");
     background-position: right;
    
-    background-size: 240px 240px;
+    background-size: 180px 180px;
     background-repeat: no-repeat;
  }
  .css{
@@ -192,15 +197,16 @@ body{
     background-repeat: no-repeat;
  }
  .js{
-    background-image: url("Groupe\ défilant\ 1.png");
+    background-image: url("js.png");
     background-position: right;
    
-    background-size: 220px 180px;
+    background-size: 180px 180px;
 
     background-repeat: no-repeat;
  }
 
  .contact{
+    padding: 60px 0;
      display: flex;
      justify-content: space-around;
     
@@ -240,7 +246,8 @@ textarea{
  }
  label{
     font-family: 'Poppins', sans-serif;
-    text-transform: capitalize; }
+    text-transform: capitalize; 
+color: #00759F !important;}
 
  
     form textarea::placeholder {
@@ -339,4 +346,107 @@ footer{
     top: 50%;
     right: 0;
 
+}
+#up{
+    width: 30px;
+    padding: 20px;
+    height: 30px;
+  
+    position: fixed;
+    top: 60%;
+    right: 0; 
+    color: yellow;
+}
+@media only screen and (max-width: 600px) 
+{
+   .main article img{
+       display: none !important;
+   }
+   .main article{
+       flex-direction: column;
+      
+   }
+   .main article div {
+       width: 100%;
+   }
+   .contact img{
+        display: none;
+   }
+  .buttons button{
+     width: 100%;      
+   }
+   .contact input{
+       padding: 10px;
+   }
+   .contact textarea{
+    padding: 10px 10px 40px;
+}
+.conact-container{
+    padding: 6px 10px;
+}
+footer{
+    justify-content: flex-start;
+}
+
+
+.nav{
+    flex-direction: column;
+    padding: 10px 0;
+}
+.header{
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+@media only screen and (min-width: 600px){
+    .header{
+        display: flex;
+    align-items: center;
+  
+    padding: 20px;
+    flex-direction: row;
+    }
+    .nav a{
+        padding: 0 2px;
+    }
+    .nav{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        /* width: 56%; */
+        align-content: center;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    footer{
+        flex-wrap: nowrap;
+        display: flex;
+        gap: 10px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    .main article img{
+        display: none;
+    }
+    .contact img{
+        display: none;
+    }
+    article div{
+        width: 100%;
+    }
+    .groupe-card{
+        
+            padding: 20px 0;
+            display: inline-flex;
+            justify-content: center;
+            gap: 21px;
+            width: 100%;
+    }
+    .contact{
+        padding: 60px;
+    }
+    footer{
+        gap: 10px;
+    }
 }
