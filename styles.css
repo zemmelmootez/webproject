@@ -451,6 +451,7 @@ footer{
   
     padding: 20px;
     flex-direction: row;
+    flex-wrap: nowrap;
     }
     .nav a{
         padding: 0 2px;
