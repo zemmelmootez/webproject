@@ -47,11 +47,12 @@
 }
 .main nav {
    padding: 40px 20px;
-   position: fixed;
+   position: sticky;
     right: 75px;
     border-left:    var(--box) ;
     height: 100vh;
    
+     top: 4rem;
     
 }
 
@@ -79,7 +80,7 @@ dl{
 mark{
     background-color: #00759F;
     padding: 0 20px;
-    color: var(--primary-color);
+    color: white !important;
 }
 dt{
     padding: 20px 0 20px;
@@ -148,6 +149,7 @@ dd{
     font-weight: 400;
   text-transform: capitalize; 
   background-color: #00759F;
+  color: white !important;
 
  }
  .table1{
@@ -155,8 +157,44 @@ dd{
  }
 
  video{
-     width: inherit;
+    
      margin: 0 !important;
     padding: 0 !important;
-
+    
 }
+.browser{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.browser span {
+    font-size: 20px;
+}
+.browser p{
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+     appearance: none;
+   
+    height: 2px;
+  }
+  progress[value]::-webkit-progress-value {
+     background-color: rgb(255, 255, 255);
+     border-radius: 15px;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: rgb(190, 190, 190);
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    
+    
+  }
+  .navigateur{
+      display: flex;
+      flex-wrap: nowrap;
+      padding: 20px 0;
+  }

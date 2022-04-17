@@ -27,10 +27,10 @@
        </header> 
 
     <!-- main section -->
-    <section class="main">
+    <section id="intro" class="main">
       <div class="content">
-        <div>
-            <h1 class="">introduction</h1>
+        <div >
+            <h1  class="">introduction</h1>
             <p> Développer chez l’apprenant les compétences adéquates pour créer un site web statique en utilisant les logiciels appropriés.</p>
             </div>   
             <dl>
@@ -83,31 +83,31 @@
               </dd>
               </dl>  
               <p id="title">exemples des navigateur</p>
-              <table  id="table" border="0">
-               
-                <tr>
-                  <th>Image</th>
-                  <th>Name</th>
-                  <th>Usage</th>
-                </tr>
-                <tr>
-                  <td><img src="./images/Google__G__Logo.svg" width="40px" height="40px" alt="google"></td>
-                  <td>Google Chrome</td>
-                  <td><meter value="0.75"></meter></td>
-                </tr>
-                <tr>
-                  <td><img src="images/mozilla.png" width="40px" height="40px" alt="mozilla"></td>
-                  <td>Mozilla Firefox</td>
-                  <td><meter value="0.6"></meter></td>
-                </tr>
-                <tr>
-                  <td><img src="images/internet.png" width="40px" height="40px" alt="internet"></td>
-                  <td>Internet Explorer</td>
-                  <td><meter value="0.5"></meter></td>
-                </tr>
-              </table>
+              <div class="navigateur">
+                <div class="browser">
+                    <p>Chrome</p>
+                    <span>64,53%</span>
+                    <progress max="100.0" value="64.53"></progress>
+    
+                </div>
+                <div class="browser">
+                    <p>Firefox</p>
+                    <span>3,4%</span>
+                    <progress max="100.0" value="3.4"></progress>
+    
+                </div>
+                <div class="browser">
+                    <p>Edge</p>
+                    <span>4.05%</span>
+                    <progress max="100.0" value="4.05"></progress>
+    
+                </div>
+                
+            </div>
+    
+    
               <dt><mark>Hyper lien</mark></dt>
-              <dd>Un hyperlien ou lien hypertexte, est une référence placée dans le contenu d'une page web permettant de passer automatiquement d'un document consulté à un autre document ou à une autre partie du même document. Il prend la plupart du temps la forme d'un texte souligné en bleu, mais peut également être placé sur une photo, une image, un bouton, etc1.</dd>
+              <dd id="bal1">Un hyperlien ou lien hypertexte, est une référence placée dans le contenu d'une page web permettant de passer automatiquement d'un document consulté à un autre document ou à une autre partie du même document. Il prend la plupart du temps la forme d'un texte souligné en bleu, mais peut également être placé sur une photo, une image, un bouton, etc1.</dd>
            
              
            
@@ -115,7 +115,7 @@
            
            
            
-              <h1>Les balises html et leurs attributs</h1>
+              <h1 >Les balises html et leurs attributs</h1>
               <p>Une balise HTML est un élément de base du système de codage HTML utilisé, en grande partie, pour la création d'une page Web. Ce sont les balises HTML qui permettent de hiérarchiser et de structurer le contenu d'une page Web grâce à une mise en forme particulière </p> 
             
               <table  class="table1" > 
@@ -161,7 +161,7 @@
                     
                 </tr>
                 <tr>
-                    <td style="width: 120px;"><code>&lt;input&gt;</code></td>
+                    <td ><code>&lt;input&gt;</code></td>
                     <td >
                         <p>
                             accept
@@ -201,7 +201,7 @@
                     
                 </tr>
                 <tr>
-                    <td style="width: 120px;"><code>&lt;input&gt;</code></td>
+                    <td ><code>&lt;input&gt;</code></td>
                     <td >
                         <p>
                             accept
@@ -232,7 +232,7 @@
                 <tr>
                     <td><code>&lt;a&gt;</code></td>
                     <td  >
-                        <p>
+                        <p  id="bal2">
                             href
                             ,
                             download
@@ -253,7 +253,7 @@
      
            
            
-            <h1 id="bal2">Les balises en pair</h1>
+            <h1>Les balises en pair</h1>
             <p> Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi elles ressemblent 
          </p>
              <table class="table1"   > 
@@ -279,11 +279,11 @@
                      </tr>
                  <tr>
                      <td><code>&lt;table&gt;..&lt;/table&gt;</code></td>
-                     <td > Définition d'un tableau </td>
+                     <td id="bal3" > Définition d'un tableau </td>
                      </tr>
                  </table>
 
-                 <h1 id="bal3">Les balises  les plus courantes</h1>
+                 <h1>Les balises  les plus courantes</h1>
                  <p> ce sont les balises les plus utilisant dans les pages web
               </p>
                   <table class="table1"> 
@@ -325,21 +325,19 @@
                              <td >insertion de video  </td>
                              </tr>
                       </table>
-     
+                      <!--
+                        <video poster="images/html5.png" autoplay="" controls muted><source src="images/html.mp4"></video>
+                      -->
             </div> 
 
-            <div>
-                <video poster="images/html5.png" autoplay="" controls muted><source src="images/html.mp4"></video>
-              </div>
+          
 
 
 
 
 
 
-
-
-
+       
 
 
 
@@ -353,13 +351,102 @@
 
         <nav>
             <ul class="nav">
-            <a href="acceuil.html"><li>introduction</li></a> 
-       <a href="html.html"><li>les balises et leurs attributs</li></a> 
-       <a href=""><li>les balises en paires</li></a> 
-       <a href=""><li>les balises plus courant</li></a>      
+            <a href="#intro"><li>introduction</li></a> 
+       <a href="#bal1"><li>les balises et leurs attributs</li></a> 
+       <a href="#bal2"><li>les balises en paires</li></a> 
+       <a href="#bal3"><li>les balises plus courant</li></a>      
        </ul> 
             </nav>
     </section>
+    <!-- page footer -->
+
+<footer>
+
+    <div class="footer1">
+     <img class="logo" id="logo" width="180px" src="Groupe 17.png">
+      
+     <ul >
+        <a href=""><li>Acceuil</li></a> 
+        <a href=""><li>HTML</li></a> 
+        <a href=""><li>CSS</li></a> 
+        <a href=""><li>JAVASCRIPT</li></a> 
+        <a href=""><li>Contact</li></a> 
+        
+     </ul>
+     <div class="social-media">
+        <img width="30px" src="Groupe 13.png">
+        <img width="30px" src="Groupe 14.png">
+        <img width="30px" src="Layer 2.png">
+        <img width="30px" src="ytb.png">
+        <img width="30px" src="link.png">
+     </div>
+    </div>
+    <div class="footer2">
+       <h3>HTML</h5>
+       <ul>
+       <li>
+       <a href="html.html">html</a>
+     </li>
+     <li>
+       <a href="#intro">introduction</a>
+     </li>
+     <li>
+       <a href="#bal1">les balises et leurs attributs</a>
+     </li>
+     <li>
+       <a href="#bal2">les balies en paires</a>
+     </li>
+     <li>
+       <a href="#bal3">les balies plus courant</a>
+     </li>
+  </ul>
+    </div>
+    <div class="footer2">
+     <h3>CSS</h5>
+     <ul>
+     <li>
+     <a href="">CSS3</a>
+   </li>
+   <li>
+     <a href="#intro">principe de feuille de style css
+        </a>
+   </li>
+   <li>
+     <a href="#bal1">selecteur css class et id</a>
+   </li>
+   <li>
+     <a href="#bal2">mettre en forme un texte en css
+     </a>
+   </li>
+   
+  </ul>
+  </div>
+    
+  <div class="footer2">
+   <h3>JAVASCRIPT</h5>
+   <ul>
+   <li>
+   <a href="">javascript</a>
+  </li>
+  <li>
+   <a href="#intro">introduction</a>
+  </li>
+  <li>
+   <a href="#bal1">ou se place le code javascript</a>
+  </li>
+  
+  
+  </ul>
+  </div>
+  
+  
+  
+  
+  
+  </footer>
+    
+   
+  
     <!-- stuff -->
 
 <div class="night">
