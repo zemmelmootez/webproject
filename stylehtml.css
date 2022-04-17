@@ -1,0 +1,162 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.main nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+   
+    
+}
+.main a {
+    text-decoration: none;
+     font-family: "Poppins";
+     text-transform: capitalize;
+     font-size: 14px;
+
+}
+
+.main div{
+    width: 75vw;
+    line-height: 25px;
+    
+  
+}
+.main p {
+    
+
+ font-size: 14px;
+ color: var(--primary-color);
+}
+.main h1{
+    color: #00759F !important;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
+    padding: 10px 0;
+
+  
+    
+}
+.main nav {
+   padding: 40px 20px;
+   position: fixed;
+    right: 75px;
+    border-left:    var(--box) ;
+    height: 100vh;
+   
+    
+}
+
+.main nav ul{
+    display: flex;
+   
+    gap: 50px       ;
+
+}
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: inherit;
+    border-bottom: var(--box);
+}
+.main nav li{
+    width: max-content;
+}
+dl{
+    width: 70vw !important;
+    color: var(--primary-color);
+}
+
+mark{
+    background-color: #00759F;
+    padding: 0 20px;
+    color: var(--primary-color);
+}
+dt{
+    padding: 20px 0 20px;
+    font-size: 14px;
+
+}
+dd{
+    font-family: 'Poppins';
+    font-size: 13px;}
+
+
+    #table{
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        
+    }
+    #table td{
+        padding: 20px 20px;
+        
+    }
+  
+    meter::-webkit-meter-optimum-value {
+        background-color: #00759F;
+         border-radius: 0px !important;
+       
+      }
+      th{
+          font-weight: 200;
+      }
+      meter{
+          height: 20px;
+          outline: none;
+      }
+    
+      #title{
+          text-align: center;
+          padding: 20px ;
+          font-weight: 400;
+          font-size: 20px;
+          color: #00759F !important;
+        /*  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(70,107,252,1) 100%);          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;*/
+      }
+ 
+   .table1{
+       padding: 60px 0;
+
+   }
+   .table1 td{
+       padding: 10px 20px;
+       border: 1px solid #00759F;
+
+   }
+  
+    
+.table1 td{
+        font-size: 12px ;
+        font-weight: 400; 
+      }
+.table1 td {
+    width: 25vw;
+}
+.title-table {
+    font-size: 16px !important;
+    font-weight: 400;
+  text-transform: capitalize; 
+  background-color: #00759F;
+
+ }
+ .table1{
+    border-spacing: 1px;
+ }
+
+ video{
+     width: inherit;
+     margin: 0 !important;
+    padding: 0 !important;
+
+}

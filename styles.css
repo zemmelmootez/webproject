@@ -15,6 +15,7 @@ flex-wrap: wrap;
     --bg-color: #fff;
     --heading-color: #292922;*/
     --border: 0;
+    --box:1px solid rgba(255, 255, 255, 0.068);
 }
 [data-theme="dark"] {
     --primary-color: #ffffff;
@@ -22,7 +23,11 @@ flex-wrap: wrap;
    
     --secondary-color: #ffffff;
     --border: 1px 0 6px #bbb7b7;
+    --box:1px solid rgba(0, 0, 0, 0.123);
 
+}
+a{
+    text-decoration: none;
 }
 
 body{
@@ -163,7 +168,10 @@ body{
   }
   .groupe-card div:hover{
       opacity: 1;
+     
   }
+  
+
   
   .groupe-card div h3{
     font-family: 'Poppins', sans-serif;
