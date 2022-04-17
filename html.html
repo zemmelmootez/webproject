@@ -7,13 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylehtml.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
     <!-- page header-->
     <header class="header" id="top">
-        <img class="logo" width="180px" src="Groupe 17.png">
-        
+        <div class="header-elem"><img class="logo" width="180px" src="Groupe 17.png">
+          <a  class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+           </a>
+        </div>
         <ul class="nav">
            <a href="acceuil.html"><li>Acceuil</li></a> 
            <a href="html.html"><li>HTML</li></a> 
@@ -22,9 +30,10 @@
            <a href=""><li>Contact</li></a> 
            
         </ul>
+        
     
     
-       </header> 
+       </header>
 
     <!-- main section -->
     <section id="intro" class="main">
@@ -349,8 +358,8 @@
 
 
 
-        <nav>
-            <ul class="nav">
+        <nav class="nav1">
+            <ul >
             <a href="#intro"><li>introduction</li></a> 
        <a href="#bal1"><li>les balises et leurs attributs</li></a> 
        <a href="#bal2"><li>les balises en paires</li></a> 

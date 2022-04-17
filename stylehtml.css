@@ -63,11 +63,12 @@
 
 }
 .header{
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: inherit;
-    border-bottom: var(--box);
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
 }
 .main nav li{
     width: max-content;
@@ -118,7 +119,7 @@ dd{
     
       #title{
           text-align: center;
-          padding: 20px ;
+          padding: 20px 0;
           font-weight: 400;
           font-size: 20px;
           color: #00759F !important;
@@ -141,9 +142,7 @@ dd{
         font-size: 12px ;
         font-weight: 400; 
       }
-.table1 td {
-    width: 25vw;
-}
+
 .title-table {
     font-size: 16px !important;
     font-weight: 400;
@@ -198,3 +197,41 @@ progress[value] {
       flex-wrap: nowrap;
       padding: 20px 0;
   }
+  @media only screen and (max-width: 600px){
+   
+     
+    .main{
+    padding: 0px 20px;
+    }
+    .navigateur{
+        flex-wrap: wrap !important;
+        align-items: center;
+    }
+    div{
+        width: 100% !important;
+    }
+    dl{
+        width: 100% !important;
+    }
+    
+    .nav1{
+        display: none !important;
+    }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1280px) {
+
+   
+    
+    div{
+        width: 100% !important;
+    }
+    dl{
+        width: 100% !important;
+    }
+    section nav{
+        display: none !important;
+    }
+
+  }
+

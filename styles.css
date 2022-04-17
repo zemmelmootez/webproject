@@ -348,9 +348,13 @@ footer{
 .footer2 a{
     text-decoration: none;
     font-size: 14px;
+    display: block;
+    list-style: none;
+    padding: 5px 0;
+    font-family: 'Poppins', sans-serif;
     
 }
-.night{
+.night img{
     width: 30px;
     padding: 20px;
     height: 30px;
@@ -370,8 +374,33 @@ footer{
     right: 0; 
     color: yellow;
 }
+.icon{
+    display: none;
+}
 @media only screen and (max-width: 600px) 
 {
+    .header ul a{
+        display: none !important;
+    }
+  
+    .header.responsive{
+        position: relative;
+    }
+    .header.responsive a{
+        
+        display: block !important ;
+      }
+     .icon{
+       display:block;
+     } 
+     
+    .header-elem{
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+    
+
    .main article img{
        display: none !important;
    }
@@ -406,11 +435,15 @@ footer{
     flex-direction: column;
     padding: 10px 0;
 }
-.header{
-    flex-direction: column;
-    align-items: flex-start;
+
+.groupe-card div{
+    width: 309px;
+}
+#reset{
+    width: 100%;
 }
 }
+
 @media only screen and (min-width: 600px){
     .header{
         display: flex;
