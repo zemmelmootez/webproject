@@ -395,9 +395,12 @@ footer{
      } 
      
     .header-elem{
-        display: flex;
-        gap: 80px;
-        align-items: center;
+     
+    display: flex;
+  
+    align-items: center;
+    justify-content: space-between;
+
     }
     
 
@@ -442,16 +445,26 @@ footer{
 #reset{
     width: 100%;
 }
+.header{
+    display: block !important;
+
+padding: 20px;
+
+}
+h3{
+    font-size: 7vw !important;
+}
+.groupe-card div button{
+    font-size: 3vw !important;
+}
 }
 
 @media only screen and (min-width: 600px){
     .header{
         display: flex;
-    align-items: center;
   
     padding: 20px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+   
     }
     .nav a{
         padding: 0 2px;
@@ -471,6 +484,8 @@ footer{
         display: flex;
         gap: 10px;
     }
+ 
+    
 }
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
     .main article img{
