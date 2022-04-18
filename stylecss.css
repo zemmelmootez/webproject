@@ -1,0 +1,20 @@
+
+.introduction {
+    
+    padding: 0px 20px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 30px;
+}
+.introduction span{
+   
+    font-weight: 800 !important;
+}
+.introduction h1{
+    color: #00759F !important;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
+    padding: 20px 0;
+}
