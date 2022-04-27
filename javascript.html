@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="js.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <!-- page header-->
+    <header class="header" id="top" >
+        <div class="header-elem"><img class="logo" width="180px" id="premier_h1" src="Groupe 17.png">
+          <a  class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+           </a>
+        </div>
+        <ul class="nav">
+           <a href="acceuil.html"><li>Acceuil</li></a> 
+           <a href="html.html"><li>HTML</li></a> 
+           <a href="css.html"><li>CSS</li></a> 
+           <a href=""><li>JAVASCRIPT</li></a> 
+           <a href=""><li>Contact</li></a> 
+           
+        </ul>
+        
+    
+    
+       </header>
+
+    <!-- main section -->
+    <section class="main">
+      <div class="content">
+        <div>
+            <h1 id="intro">introduction</h1>
+            <p >Welcome to the MDN beginner's JavaScript course! In this article we will 
+                look at JavaScript from a high level, answering questions such as "What is it?" and "What can you do with it?", 
+                and making sure you are comfortable with JavaScript's purpose.</p>
+            <p class="marked"> <mark> What is JAVASCRIPT ?</mark> </p>
+            <p >JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else
+            . ( not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</p>
+            <p class="marked"> <mark> what is JavaScript doing on your page</mark> </p>
+            <h3>Browser Security </h3>
+            <p >Each browser tab has its own separate bucket for running code in (these buckets are called "execution environments" in technical terms) — this means that in most cases the code in each tab is run completely separately, and the code in one tab cannot directly affect the code in another tab — or on another website. This is a good security measure — if this were not the case, then pirates could start writing code to steal information from other websites, and other such bad things.</p>
+            <h3>Javascript running order</h3>
+            <p >When the browser encounters a block of JavaScript, it generally runs it in order,
+                 from top to bottom. This means that you need to be careful what order you put things in. </p>
+            <h3>Interpreted versus compiled code</h3>
+            <p >JavaScript is a lightweight interpreted programming language. The web browser receives the JavaScript code in its original text form and runs the script from that. From a technical standpoint, most modern JavaScript interpreters actually use a technique called just-in-time compiling to improve performance; the JavaScript source code gets compiled into a faster, binary format while the script is being used, so that it can be run as quickly as possible. However, JavaScript is still considered an interpreted language,
+                 since the compilation is handled at run time, rather than ahead of time.</p></div>
+                 <h1>JavaScript objects</h1>
+                 <p class="marked" id="deuxieme_h1"> <mark>  Object basics</mark> </p>
+                 <p>An object is a collection of related data and/or functionality. These usually consist of several variables and functions (which are called properties and methods when they are inside objects). Let's work through an example to understand what they look like.
+
+                    To begin with, make a local copy of our oojs.html file. This contains very little — a ....script> element for us to write our source code into. We'll use this as a basis for exploring basic object syntax. While working with this example you should have your developer tools JavaScript console open and ready to type in some commands.
+                    
+                    As with many things in JavaScript, creating an object often begins with defining and initializing a variable.</p>
+                 <p class="marked"> <mark> What is this?</mark> </p>
+                 <p>In JavaScript, the this keyword refers to an object.
+
+                  Which object depends on how this is being invoked (used or called).
+                  
+                  The this keyword refers to different objects depending on how it is used:</p>
+                  <ul>
+                    <li>
+                      In an object method, this refers to the object.</li>
+                      <li>Alone, this refers to the global object.</li>
+                      <li>In a function, this refers to the global object.</li>
+                      <li>In a function, in strict mode, this is undefined.</li>
+                      <li>Methods like call(), apply(), and bind() can refer this to any object.</li>
+                  </ul>
+                 <h1>classes in JavaScript</h1>
+                 <p class="marked"> <mark> What is a class in Js ?</mark> </p>
+                 <p>A JavaScript class is not an object.
+
+                  It is a template for JavaScript objects.</p>
+                 <p class="marked"> <mark>   The Constructor Method</mark> </p>
+               
+                  <p id="troixieme_h1">  The constructor method is a special method:
+
+It has to have the exact name "constructor"
+It is executed automatically when a new object is created
+It is used to initialize object properties
+If you do not define a constructor method, JavaScript will add an empty constructor method.</p>
+<p class="marked"> <mark>  Class Methods</mark> </p> 
+  <p> Class methods are created with the same syntax as object methods.
+
+Use the keyword class to create a class.
+
+Always add a constructor() method.
+
+Then add any number of methods.</p>
+        </div>
+        <nav class="nav1">
+            <ul class="nav">
+                <a href="#premier_h1"><li>introduction</li></a> 
+                <a href="#deuxieme_h1"><li>JavaScript objects</li></a> 
+                <a href="#troixieme_h1"><li>Classes in javascript</li></a>
+       </ul> 
+            </nav>
+        </section>
+        <!-- stuff -->
+    
+    <div class="night">
+      <img  width="25px"src="moon.png" id="switch"  name="dark"onclick="test()">
+      </div>
+      <a href="#top"><img  id="up" src="upload (4).png"></a>
+      
+      
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script  src="index.js"></script>
+    
+    </body>
+    </html>

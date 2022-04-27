@@ -129,6 +129,19 @@ table{
     padding: 20px 0;
   }  
 
+  #exemple2{ 
+    border: 1px solid; 
+    margin-top: 2rem;
+   }
+   .horizontal {
+       writing-mode: horizontal-tb;
+     }
+     
+     .vertical {
+       writing-mode: vertical-rl;
+       padding: 20px 0;
+     }
+   
   @media only screen and (max-width: 600px){
    
 

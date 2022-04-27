@@ -1,0 +1,90 @@
+.main h1{
+    color: #00759F !important;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
+    padding: 10px 0;
+  
+  
+    
+  }
+  mark{
+    background-color: #00759F;
+    padding: 5px 0;
+    color: white !important;
+  }
+
+  p{
+    padding: 20px 0 20px;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  h3{
+    color: #F6C90E !important;
+    padding: 20px 0;
+  }  
+
+  
+.main{
+    display: flex;
+    flex-wrap: wrap;
+  
+  
+  }
+  .main nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+   
+    
+  }
+  .main a {
+    text-decoration: none;
+     font-family: "Poppins";
+     text-transform: capitalize;
+     font-size: 14px;
+  
+  }
+  .content{
+      width: 75%;
+  }
+  
+  .main nav {
+    padding: 40px 20px;
+    position: fixed;
+     right: 75px;
+     border-left:    var(--box) ;
+     height: 100vh;
+     
+   }
+   
+   .main nav ul{
+     display: flex;
+    
+     gap: 50px       ;
+   
+   }
+   .main nav li{
+     width: max-content;
+   }
+   .main {
+    padding: 10px 20px !important;
+}
+    
+  @media only screen and (max-width: 600px){
+   
+
+    .content{
+        width: 100%;
+    }
+    .nav1{
+        display: none;
+    }
+    .block{
+        padding: 0 5px;
+    }
+}
