@@ -1,20 +1,144 @@
-
-.introduction {
-    
-    padding: 0px 20px;
-    font-family: 'Poppins';
-    font-size: 14px;
-    line-height: 30px;
-}
-.introduction span{
-   
-    font-weight: 800 !important;
-}
-.introduction h1{
+.main h1{
     color: #00759F !important;
     font-size: 25px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     
+    padding: 10px 0;
+}
+.main {
+    padding: 10px 20px !important;
+}
+mark{
+    background-color: #00759F;
+    padding: 5px 20px;
+    color: white !important;
+}
+.img{
+    width: 100%;
     padding: 20px 0;
 }
+p{
+    padding: 20px 0 20px;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+table{
+    padding: 60px 0;
+    border-spacing: 1px;
+    
+  }
+  .content{
+    width: 70%;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+  
+  
+  }
+  .main nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+   
+    
+  }
+  .main a {
+    text-decoration: none;
+     font-family: "Poppins";
+     text-transform: capitalize;
+     font-size: 14px;
+  
+  }
+  
+  .main h1{
+    color: #00759F !important;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    
+    padding: 10px 0;
+  
+  
+    
+  }
+  .main nav {
+   padding: 40px 20px;
+   position: fixed;
+    right: 75px;
+    border-left:    var(--box) ;
+    height: 100vh;
+    
+  }
+  
+  .main nav ul{
+    display: flex;
+   
+    gap: 50px       ;
+  
+  }
+  .main nav li{
+    width: max-content;
+  }
+  table td,th{
+    padding: 10px 20px;
+    border: 1px solid #00759F;
+  }
+  table p{
+    width:auto;
+  }
+  table th{
+    background-color: #00759F;
+  }
+  table{
+     font-size: 16px !important ;
+     font-weight: 400; 
+   }
+
+   h3{
+    color: #bcd377 !important;
+      padding: 20px 0;
+  }
+  
+  span{
+    color: #E1D89F !important;
+}
+
+
+#exemple{
+    padding: 1em 0;
+  }
+  #exemple p, #exemple ul {
+    border: 2px solid #D89216;
+    padding: -1em;
+    padding: 10px 5px;
+  }
+  #exemple ul {
+    display: flex;
+    list-style: none;
+  }
+  .block,
+  #exemple li {
+    border: 2px solid #E1D89F;
+    padding: .5em;
+  }
+  h4{
+    color: #F6C90E !important;
+    padding: 20px 0;
+  }  
+
+  @media only screen and (max-width: 600px){
+   
+
+    .content{
+        width: 100%;
+    }
+    .nav1{
+        display: none;
+    }
+    .block{
+        padding: 0 5px;
+    }
+  }
