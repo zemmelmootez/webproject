@@ -30,7 +30,7 @@ table{
     
   }
   .content{
-    width: 70%;
+    width: 80%;
 }
 .main{
     display: flex;
@@ -72,6 +72,9 @@ table{
     height: 100vh;
     
   }
+  .content{
+    padding: 0 20px;
+  }
   
   .main nav ul{
     display: flex;
@@ -100,6 +103,10 @@ table{
    h3{
     color: #bcd377 !important;
       padding: 20px 0;
+  }
+  .footer1{
+
+    padding: 20px 0;
   }
   
   span{
@@ -155,3 +162,11 @@ table{
         padding: 0 5px;
     }
   }
+ .main nav{
+  padding: 40px 20px;
+  position: sticky;
+  left: 500px !important  ;
+  border-left: var(--box);
+  height: 100vh;
+  top: 4rem;
+ }

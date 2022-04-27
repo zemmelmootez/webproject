@@ -1,26 +1,4 @@
-/*
-function test(){
-   
-    if(document.body.style.backgroundColor=="white")
-    {document.body.style.backgroundColor="black";
-    var all = document.getElementsByTagName("*");
 
-    for (var i=0, max=all.length; i < max; i++) {
-      
-     all[i].style.color = "white";
-     
-    }
-}
-    else { document.body.style.backgroundColor="white";
-    var all = document.getElementsByTagName("*");
-
-    for (var i=0, max=all.length; i < max; i++) {
-    
-      
-     all[i].style.color = "black";
-    }}
-}
-*/
 function test()
 {
   
@@ -28,19 +6,19 @@ function test()
   {
     document.documentElement.setAttribute('data-theme', 'dark');
     document.getElementById("switch").attributes[3].value="light";
-    document.querySelector(".logo").src="logodark.png";
-    document.getElementById("logo").src="logodark.png";
+    document.querySelector(".logo").src="../images/logodark.png";
+    document.getElementById("logo").src="../images/logodark.png";
     
 }
 else
 { document.getElementById("switch").attributes[3].value="dark";
     document.documentElement.setAttribute('data-theme', 'light');
-    document.querySelector(".logo").src="Groupe 17.png";
-    document.getElementById("logo").src="Groupe 17.png";
+    document.querySelector(".logo").src="../images/Groupe 17.png";
+    document.getElementById("logo").src="./images/Groupe 17.png";
 }
 }
 
-
+/*
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -64,7 +42,7 @@ $(document).ready(function(){
         });
       } // End if
     });
-  });
+  });*/
   function myFunction() {
     var x = document.getElementById("top");
     if (x.className === "header") {

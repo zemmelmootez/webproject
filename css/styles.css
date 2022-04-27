@@ -191,21 +191,21 @@ body{
     
   }
  .html{
-    background-image: url("html.png");
+    background-image: url("../images/html.png");
     background-position: right;
    
     background-size: 180px 180px;
     background-repeat: no-repeat;
  }
  .css{
-    background-image: url("cs.png");
+    background-image: url("../images/cs.png");
     background-position: right;
    
     background-size: 180px 180px;
     background-repeat: no-repeat;
  }
  .js{
-    background-image: url("js.png");
+    background-image: url("../images/js.png");
     background-position: right;
    
     background-size: 180px 180px;
@@ -354,6 +354,9 @@ footer{
     font-family: 'Poppins', sans-serif;
     
 }
+.footer2{
+    padding: 0 5px;
+}
 .night img{
     width: 30px;
     padding: 20px;
@@ -451,7 +454,16 @@ footer{
 padding: 20px;
 
 }
-
+.main nav {
+    padding: 40px 20px;
+    position: sticky;
+     right: 75px;
+     border-left:    var(--box) ;
+     height: 100vh;
+    
+      top: 4rem;
+     
+ }
 h3{
     font-size: 7vw !important;
 }

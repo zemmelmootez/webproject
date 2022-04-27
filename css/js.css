@@ -24,10 +24,20 @@
   }
 
   h3{
-    color: #F6C90E !important;
+    color: #d6b636 !important;
     padding: 20px 0;
   }  
 
+  .main nav {
+    padding: 40px 20px;
+    position: sticky;
+     right: 75px;
+     border-left:    var(--box) ;
+     height: 100vh;
+    
+      top: 4rem;
+     
+ }
   
 .main{
     display: flex;
